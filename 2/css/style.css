@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "header"
+            "main"
+            "aditional"
+            "footer";
+}
+
+
+.header {
+    max-width: 1200px;
+    grid-area: header;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px;
+
+}
+
+.main {
+    background: url("../images/Bg.png") center;
+    background-size: cover;
+}
+
+.menu {
+    width: 352px;
+    margin-left: 208px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+.main-info {
+    grid-area: main;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 102px 0 152px 0;
+}
+
+.main-info h1 {
+    max-width: 468px;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.922);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.btn {
+    width: 228px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px;
+    background-color: #2f863c;
+    border: 0;
+    box-sizing: border-box;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.btn.transparent {
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+.additional {
+    grid-area: aditional;
+    background: url("../images/background_objects.png") center  #181717;
+}
+
+.right-food {
+    max-width: 667px;
+    margin: 160px auto;
+    background-color: white;
+    text-align: center;
+    padding: 37px 0 23px 0;
+}
+
+.right-food h2 {
+    margin-bottom: 43px;
+    font-size: 36px;
+    color: rgb(204, 153, 0);
+    font-weight: bold;
+}
+
+.text {
+    margin: 0 auto;
+    max-width: 434px;
+    font-size: 16px;
+    font-family: "Times", sans-serif;
+    color: rgb(76, 76, 76);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.img-table {
+    margin-top: 47px
+}
+
+.img-table img{
+    max-width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #10110f;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights {
+    font-size: 16px;
+    color: rgb(188, 188, 188);
+    line-height: 1.2;
+}
+
